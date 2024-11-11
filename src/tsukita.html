@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 
 <head>
+    <link rel="stylesheet" href="tsukita.css" />
     <script type="text/javascript" src="main.js"></script>
 </head>
 <html>
 
 <body>
-    <input id="nuevaTareaInput" />
-    <button id="nuevaTarea" onclick="nuevaTarea()">Añadir Nueva Tarea</button>
-    <div>--------Tareas-------</div>
-    <div id="listaDeTareas"></div>
-    <div>--------Completadas-------</div>
-    <div id="listaDeTareasCompletadas"></div>
+    <div class="container">
+        <div class="box">
+            <div class="nuevaTarea">
+                <input id="nuevaTareaInput" />
+                <button class="masBtn" id="nuevaTarea" onclick="nuevaTarea()">+</button>
+            </div>
+            <div class="TareasCompletadas">
+                <div class="Tareas">--------Tareas--------</div>
+                <div id="listaDeTareas"></div>
+                <div class="Tareas">--------Completadas-------</div>
+                <div id="listaDeTareasCompletadas"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

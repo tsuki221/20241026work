@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(253, 211, 211);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 125, 125);
+    padding: 30px;
+    margin-top:70px;
+    border-radius: 20px;
+}
+
+.box,.Tareas{
+    flex-direction: column;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.nuevaTarea{
+    margin-left: 2px;
+}
+.masBtn{
+    background-color: rgb(134, 77, 77);
+    border: none;
+    color: aliceblue;
+}
+.completeBtn{
+    background-color: brown;
+    border: none;
+}
+.tarea{
+    display: flex;
+}
+.tareaLabel{
+    flex: 1;
+    margin-left:10px;
+    margin-right:10px;
+}

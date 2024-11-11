@@ -53,10 +53,11 @@ function mostrarTareas() {
         .filter(tareaId => !tareas[tareaId].complete)
         .map((tareaId) => `
         <div class="tarea">
-            <span class="tareaLabel">${tareas[tareaId].id}</span>
             <button class="completeBtn" onclick="completarTarea('${tareaId}')">
                 Complete
             </button>
+            <span class="tareaLabel">${tareas[tareaId].id}</span>
+            
             <button class="deleteBtn" onclick="eliminarTarea('${tareaId}')">
                 Delete
             </button>
@@ -68,11 +69,12 @@ function mostrarTareas() {
     const listaDeTareasCompletadas = Object.keys(tareas)
         .filter(tareaId => !!tareas[tareaId].complete)
         .map((tareaId) => `
-        <div class="tarea">
-            <span class="tareaLabel">${tareas[tareaId].id}</span>
+        <div class="tarea">    
             <button class="incompleteBtn" onclick="incompletarTarea('${tareaId}')">
                 Mark as incomplete
             </button>
+            <span class="tareaLabel">${tareas[tareaId].id}</span>
+           
             <button class="deleteBtn" onclick="eliminarTarea('${tareaId}')">
                 Delete
             </button>
